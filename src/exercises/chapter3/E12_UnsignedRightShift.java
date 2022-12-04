@@ -1,0 +1,53 @@
+package exercises.chapter3;
+
+/**
+ * Exercise 12
+ * Start with a number that is all binary ones. Left shift it, then use the
+ * unsigned right-shift operator to right shift through all of its binary
+ * positions, each time displaying the result using Integer.toBinaryString().
+ */
+public class E12_UnsignedRightShift {
+    public static void main(String[] args) {
+        int i = -1;
+        i <<= 1;
+        System.out.println(Integer.toBinaryString(i));
+        for (int j = 0; j < 31; j++) {
+            i >>>= 1;
+            System.out.println(Integer.toBinaryString(i));
+        }
+    }
+}
+/* Output:
+11111111111111111111111111111110
+1111111111111111111111111111111
+111111111111111111111111111111
+11111111111111111111111111111
+1111111111111111111111111111
+111111111111111111111111111
+11111111111111111111111111
+1111111111111111111111111
+111111111111111111111111
+11111111111111111111111
+1111111111111111111111
+111111111111111111111
+11111111111111111111
+1111111111111111111
+111111111111111111
+11111111111111111
+1111111111111111
+111111111111111
+11111111111111
+1111111111111
+111111111111
+11111111111
+1111111111
+111111111
+11111111
+1111111
+111111
+11111
+1111
+111
+11
+1
+ */
