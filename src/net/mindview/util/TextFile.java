@@ -81,11 +81,9 @@ public class TextFile extends ArrayList<String> {
         TreeSet<String> words = new TreeSet<>(
                 new TextFile("src/net/mindview/util/TextFile.java", "\\W+"));
         // Display the capitalized words:
-        System.out.println(words.headSet("Z"));
+        System.out.println(words.headSet("a"));
     }
 }
 /* Output:
-[0, ArrayList, Arrays, Break, BufferedReader, BufferedWriter, Clean, Display, File, FileReader,
-FileWriter, IOException, Normally, Output, PrintWriter, Read, Regular, RuntimeException,
-Simple, Static, String, StringBuilder, System, TextFile, Tools, TreeSet, W, Write]
+[0, ArrayList, Arrays, Break, BufferedReader, BufferedWriter, Clean, Display, File, FileReader, FileWriter, IOException, Normally, Output, PrintWriter, Read, Regular, RuntimeException, Simple, Static, String, StringBuilder, System, TextFile, Tools, TreeSet, W, Write]
  */
