@@ -41,6 +41,12 @@
             <version>3.29.0-GA</version>
         </dependency>
 
-    </dependencies>
+        <dependency>
+            <groupId>com.massisframework</groupId>
+            <artifactId>jnlp-definitions</artifactId>
+            <version>7.0</version>
+        </dependency>
+        <!-- Thanks for using https://jar-download.com -->
 
+    </dependencies>
 </project>

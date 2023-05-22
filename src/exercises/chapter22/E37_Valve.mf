@@ -1,0 +1,5 @@
+exercises/chapter22/E37_Valva.mf
+Manifest-Version: 1.0
+
+Name: E37_Valve.class
+Java-Bean: True
